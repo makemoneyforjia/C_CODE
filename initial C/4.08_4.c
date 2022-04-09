@@ -1,8 +1,8 @@
-#include <stdio.h>//º¯ÊıÕÒ×î´óÖµ
+#include <stdio.h>//äºŒåˆ†æ³•æŸ¥æ‰¾å…ƒç´ 
 int Find(int arr[],int k,int c)
 {
 	int i = 0,left=0,right=0,mid=0;
-	/*right= sizeof(arr) / sizeof(arr[0])-1;arr½ö´ú±íÊµ²ÎÖĞµÚÒ»¸öÔªËØµÄµØÖ·*/
+	/*right= sizeof(arr) / sizeof(arr[0])-1;arrä»…ä»£è¡¨å®å‚ä¸­ç¬¬ä¸€ä¸ªå…ƒç´ çš„åœ°å€*/
 	right = c - 1;
 	for (i = 0; left <=right; i++)
 
@@ -26,12 +26,12 @@ int main()
 	int a = 0, b = 0,c=0;
 	int arr[] = { 0,1,2,3,4,5,6,7,8,9 };
 	c = sizeof(arr) / sizeof(arr[0]);
-	printf("ÇëÊäÈë1¸öÕûÊı\n");
+	printf("è¯·è¾“å…¥1ä¸ªæ•´æ•°\n");
 	scanf_s("%d", &a);
 	b = Find(arr,a,c);
 	if (b==-1)
-		printf("Ã»ÓĞÕâ¸öÊı");
+		printf("æ²¡æœ‰è¿™ä¸ªæ•°");
 	else
-		printf("ÓĞÕâ¸öÊı£¬ÏÂ±êÎª->%d", b);
+		printf("æœ‰è¿™ä¸ªæ•°ï¼Œä¸‹æ ‡ä¸º->%d", b);
 	return 0;
 }
